@@ -55,8 +55,8 @@ func (app *Compose) SanityCheck() error {
 		}
 	}
 	// check to see if the project exists
-	fmt.Errorf("TRACE: Available projects: %v\n", projectNames)
-	fmt.Errorf("TRACE: App project: %q\n", app.GetProject())
+	fmt.Println("TRACE: Available projects: %v\n", projectNames)
+	log.Printf("TRACE: App project: %q\n", app.GetProject())
 	if !slices.Contains(projectNames, app.GetProject()) {
 		return &SanityCheckError{
 			Step: "check declared project exists",
