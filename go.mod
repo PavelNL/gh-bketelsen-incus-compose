@@ -4,14 +4,15 @@ go 1.24
 
 toolchain go1.24.0
 
-require (
+// proposed by Perplexity on 20251002
+﻿require (
 	github.com/alexellis/go-execute/v2 v2.2.1
 	github.com/bketelsen/toolbox v0.6.1
 	github.com/charmbracelet/lipgloss v1.1.0
 	github.com/compose-spec/compose-go/v2 v2.6.4
 	github.com/dominikbraun/graph v0.23.0
 	github.com/gosimple/slug v1.15.0
-	github.com/lxc/incus/v6 v6.13.0
+	github.com/lxc/incus/v6 v6.19.0
 	github.com/spf13/viper v1.20.1
 	gopkg.in/yaml.v3 v3.0.1
 )
