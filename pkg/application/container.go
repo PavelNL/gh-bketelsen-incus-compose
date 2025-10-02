@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	cli "github.com/bketelsen/incus-compose/pkg/incus"
+	cli "github.com/PavelNL/gh-bketelsen-incus-compose/pkg/incus"
 	incus "github.com/lxc/incus/v6/client"
 
 	"github.com/lxc/incus/v6/shared/api"
