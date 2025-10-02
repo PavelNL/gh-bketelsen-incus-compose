@@ -5,7 +5,7 @@ go 1.24
 toolchain go1.24.0
 
 // proposed by Perplexity on 20251002
-﻿require (
+require (
 	github.com/alexellis/go-execute/v2 v2.2.1
 	github.com/bketelsen/toolbox v0.6.1
 	github.com/charmbracelet/lipgloss v1.1.0
