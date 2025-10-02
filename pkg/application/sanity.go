@@ -27,6 +27,9 @@ func (app *Compose) SanityCheck() error {
 	// check to see if the incus connection is valid
 	// get the first service and try to connect to the incus remote
 	for _, service := range app.Services {
+		// input
+		log.Printf("TRACE: app.Services returned service.Name <%s>\n", service.Name)
+		//
 		remote, _, err = app.conf.ParseRemote(service.Name)
 		if err != nil {
 			return &SanityCheckError{
@@ -34,7 +37,9 @@ func (app *Compose) SanityCheck() error {
 				Err:  fmt.Errorf("error parsing remote: %s", err),
 			}
 		}
-
+		// check output
+		log.Printf("TRACE: ParseRemote returned <%q>\n", remote)
+		//
 		d, err = app.conf.GetInstanceServer(remote)
 		if err != nil {
 			return &SanityCheckError{
@@ -44,7 +49,7 @@ func (app *Compose) SanityCheck() error {
 
 		}
 		// check output
-		log.Printf("GetInstanceServer(%q) returned client: %+v\n", remote, d)
+		log.Printf("TRACE: GetInstanceServer(%q) returned client: %+v\n", remote, d)
 		// only get project names once
 		if len(projectNames) == 0 {
 			// get the project names while we're connected
