@@ -30,8 +30,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bketelsen/incus-compose/pkg/application"
-	"github.com/bketelsen/incus-compose/pkg/compose"
+	"github.com/PavelNL/gh-bketelsen-incus-compose/pkg/application"
+	"github.com/PavelNL/gh-bketelsen-incus-compose/pkg/compose"
 	"github.com/spf13/viper"
 
 	dockercompose "github.com/compose-spec/compose-go/v2/types"

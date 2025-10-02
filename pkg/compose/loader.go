@@ -5,7 +5,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/bketelsen/incus-compose/pkg/types"
+	"github.com/PavelNL/gh-bketelsen-incus-compose/pkg/types"
 	"github.com/compose-spec/compose-go/v2/cli"
 	"github.com/compose-spec/compose-go/v2/errdefs"
 	compose "github.com/compose-spec/compose-go/v2/types"
