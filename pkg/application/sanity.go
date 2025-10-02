@@ -3,6 +3,7 @@ package application
 import (
 	"fmt"
 	"slices"
+	"log"
 
 	incus "github.com/lxc/incus/v6/client"
 )
@@ -55,7 +56,7 @@ func (app *Compose) SanityCheck() error {
 		}
 	}
 	// check to see if the project exists
-	fmt.Println("TRACE: Available projects: %v\n", projectNames)
+	log.Printf("TRACE: Available projects: %v\n", projectNames)
 	log.Printf("TRACE: App project: %q\n", app.GetProject())
 	if !slices.Contains(projectNames, app.GetProject()) {
 		return &SanityCheckError{
