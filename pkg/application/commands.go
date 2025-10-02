@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"strings"
 
-	"github.com/bketelsen/incus-compose/pkg/ui"
+	"github.com/PavelNL/gh-bketelsen-incus-compose/pkg/ui"
 )
 
 // keep all the external commands in one place
