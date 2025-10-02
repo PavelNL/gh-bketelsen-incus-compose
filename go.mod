@@ -12,7 +12,7 @@ require (
 	github.com/compose-spec/compose-go/v2 v2.6.4
 	github.com/dominikbraun/graph v0.23.0
 	github.com/gosimple/slug v1.15.0
-	github.com/lxc/incus/v6 v6.19.0
+	github.com/lxc/incus/v6 v6.17.0
 	github.com/spf13/viper v1.20.1
 	gopkg.in/yaml.v3 v3.0.1
 )
