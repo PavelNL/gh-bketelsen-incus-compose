@@ -1,4 +1,4 @@
-module github.com/bketelsen/incus-compose
+module github.com/PavelNL/gh-bketelsen-incus-compose
 
 go 1.24
 
