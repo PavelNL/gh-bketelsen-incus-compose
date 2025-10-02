@@ -61,7 +61,7 @@ func (app *Compose) SanityCheck() error {
 	if !slices.Contains(projectNames, app.GetProject()) {
 		return &SanityCheckError{
 			Step: "check declared project exists",
-			Err:  fmt.Errorf("project '%s' does not exist", app.GetProject()),
+			Err:  fmt.Errorf("project '%s' does not exist, but: %s\n", app.GetProject(),projectNames),
 		}
 	}
 	// check to see if the profiles exist
