@@ -43,6 +43,8 @@ func (app *Compose) SanityCheck() error {
 			}
 
 		}
+		// check output
+		log.Printf("GetInstanceServer(%q) returned client: %+v", remote, d)
 		// only get project names once
 		if len(projectNames) == 0 {
 			// get the project names while we're connected
