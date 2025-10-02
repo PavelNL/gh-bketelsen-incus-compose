@@ -24,6 +24,8 @@ func (app *Compose) SanityCheck() error {
 	var poolNames []string
 	var netNames []string
 
+	log.Printf("TRACE: Number of services loaded: %d", len(app.Services))
+
 	// check to see if the incus connection is valid
 	// get the first service and try to connect to the incus remote
 	for _, service := range app.Services {
