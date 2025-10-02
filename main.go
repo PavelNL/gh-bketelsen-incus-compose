@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "github.com/bketelsen/incus-compose/cmd"
+import "github.com/PavelNL/gh-bketelsen-incus-compose/cmd"
 
 func main() {
 	cmd.Execute()
